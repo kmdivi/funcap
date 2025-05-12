@@ -1005,7 +1005,7 @@ class FunCapHook(DBG_Hooks):
         """
         Return next instruction to ea
         """
-        end = get_inf_structure().get_maxEA()
+        end = ida_ida.inf_get_max_ea()
         return next_head(ea, end)
 
     def prev_ins(self, ea):
